@@ -110,14 +110,56 @@
 // rearrange([]);
 
 
-function formatter(namesArr, gradesArr){
+
+// let arr = [12,35,100,70,34,1]; 
+
+// function findSecondLargest(nums){
+
+//    let sortedArr = nums.sort((a,b)=> b - a)
+
+//    let largest = sortedArr[0]
+//    console.log(largest)
+   
+// }
+
+// (findSecondLargest(arr))
+
+// Program to countdown till 1
 
 
-        for(let i = 0; i < namesArr.length; i++){
-                console.log(`${namesArr[i]} received a grade of ${gradesArr[i]}`)
-        }
-}
+function counter(count) {
 
+   
+   console.log(count);
 
+ 
+   if(count > 1) {
 
-formatter(["John", "Jane", "Emily"], [90, 85, 92])
+       
+       count = count - 1;
+
+       
+       counter(count);
+   } else {
+
+       return;
+
+   };
+};
+
+counter(100)
+
+// // access function
+// counter(5);
+
+// function print(n)
+// {
+//    if(n > 0)
+//    {
+//       print(n-1);
+//       console.log(n)
+//    } 
+   
+// }
+
+// print(100)
